@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Takahiro Sato — Senior Fullstack Engineer. 10 years bridging Japanese craftsmanship and global digital innovation."
+    />
+    <title>Takahiro Sato | Senior Fullstack Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div id="canvas-container" aria-hidden="true"></div>
+    <div id="petal-rain-container" aria-hidden="true"></div>
+    <div class="ambient-orbs" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="orb orb-c"></span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="#hero" class="logo logo--hover" aria-label="Takahiro Sato — Home">
+        <span class="logo-mark">佐藤</span>
+        <span class="logo-text">Takahiro Sato</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#japan" data-i18n="nav.japan">Japan</a>
+        <a href="#global" data-i18n="nav.global">Global</a>
+        <a href="#games" data-i18n="nav.games">Games</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-switch__btn is-active" data-lang="ja">JA</button>
+          <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <p class="hero-eyebrow">
+            <span data-i18n="hero.eyebrowRole">シニア・フルスタックエンジニア</span>
+            <span class="divider">·</span>
+            <span data-i18n="hero.eyebrowYears">10 Years</span>
+          </p>
+          <h1 class="hero-title">
+            <span class="line" data-split data-i18n="hero.title1">Crafting digital</span>
+            <span class="line accent" data-split data-i18n="hero.title2">experiences with</span>
+            <span class="line" data-split data-i18n="hero.title3">precision &amp; soul.</span>
+          </h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            I bridge the meticulous artistry of Japanese product culture with the
+            velocity of global engineering — delivering web, mobile, AI, and
+            blockchain systems that perform beautifully at scale.
+          </p>
+          <div class="hero-actions">
+            <a href="#global" class="btn btn-primary btn-primary--glow" data-i18n="hero.ctaWork">View Work</a>
+            <a href="#contact" class="btn btn-ghost btn-ghost--hover" data-i18n="hero.ctaContact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-item" data-hover-glow>
+            <span class="meta-label" data-i18n="hero.basedIn">Based in</span>
+            <span class="meta-value" data-i18n="hero.basedValue">Japan</span>
+          </div>
+          <div class="meta-item" data-hover-glow>
+            <span class="meta-label" data-i18n="hero.focus">Focus</span>
+            <span class="meta-value" data-i18n="hero.focusValue">Web · App · AI · Game · Blockchain</span>
+          </div>
+          <div class="hero-perf-strip">
+            <div class="hero-perf-item" data-hover-glow>
+              <span class="hero-perf-value" data-animate-value="95">95</span>
+              <span class="hero-perf-label" data-i18n="hero.perfLh">Avg LH Score</span>
+            </div>
+            <div class="hero-perf-item" data-hover-glow>
+              <span class="hero-perf-value" data-animate-value="1.4" data-decimals="1" data-suffix="s">1.4s</span>
+              <span class="hero-perf-label" data-i18n="hero.perfLcp">Avg LCP</span>
+            </div>
+            <div class="hero-perf-item" data-hover-glow>
+              <span class="hero-perf-value" data-animate-value="10">10</span>
+              <span class="hero-perf-label" data-i18n="hero.perfYears">Years</span>
+            </div>
+          </div>
+          <div class="scroll-hint" aria-hidden="true">
+            <span data-i18n="hero.scroll">Scroll</span>
+            <span class="scroll-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title" data-i18n="about.title">About</h2>
+          <p class="section-subtitle" data-i18n="about.subtitle">About Me</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-statement">
+            <p class="lead-text" data-i18n="about.lead">
+              My name is <strong>Takahiro Sato</strong>. As a senior fullstack
+              engineer with a decade of experience, my greatest strength lies in
+              navigating both Japanese and international projects — understanding
+              local nuance while engineering for global scale.
+            </p>
+            <p data-i18n="about.body">
+              From LLMO diagnostics platforms in Tokyo to data-visualization
+              products serving enterprises worldwide, I design systems where
+              performance, accessibility, and aesthetic refinement are never
+              traded against one another.
+            </p>
+          </div>
+          <div class="about-principles">
+            <article class="principle-card" data-hover-lift>
+              <span class="principle-kanji">精</span>
+              <h3 data-i18n="about.precision">Precision</h3>
+              <p data-i18n="about.precisionDesc">Pixel-level craft rooted in Japanese attention to detail.</p>
+            </article>
+            <article class="principle-card" data-hover-lift>
+              <span class="principle-kanji">速</span>
+              <h3 data-i18n="about.velocity">Velocity</h3>
+              <p data-i18n="about.velocityDesc">Global delivery cadence with measurable performance budgets.</p>
+            </article>
+            <article class="principle-card" data-hover-lift>
+              <span class="principle-kanji">橋</span>
+              <h3 data-i18n="about.bridge">Bridge</h3>
+              <p data-i18n="about.bridgeDesc">Translating culture, language, and architecture across markets.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="japan" class="section japan">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title" data-i18n="japan.title">Japan Experience</h2>
+          <p class="section-subtitle" data-i18n="japan.subtitle">Domestic Projects — Web · System · AI · Python · n8n · Zapier · WordPress · Sass · PHP</p>
+        </div>
+        <div id="japan-overview"></div>
+        <div id="japan-projects"></div>
+      </section>
+
+      <section id="global" class="section global">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title" data-i18n="global.title">Global Experience</h2>
+          <p class="section-subtitle" data-i18n="global.subtitle">International Projects — Web · AI · Automation · Python · n8n · Zapier · Blockchain</p>
+        </div>
+        <div id="global-overview"></div>
+        <div id="global-featured"></div>
+        <div id="global-stack-groups"></div>
+        <div id="global-projects"></div>
+      </section>
+
+      <section id="games" class="section games">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title" data-i18n="games.title">Game Development</h2>
+          <p class="section-subtitle" data-i18n="games.subtitle">Unity · Game Systems · Wallet Integration · Live Ops · Cloud Sync</p>
+        </div>
+        <div id="games-overview"></div>
+        <div id="games-projects" class="game-grid"></div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 class="section-title" data-i18n="skills.title">Expertise</h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">Technical Domains</p>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-column" data-hover-lift>
+            <h3 data-i18n="skills.frontend">Frontend &amp; Experience</h3>
+            <ul class="skill-list">
+              <li data-i18n="skills.fe1">React / Next.js / Vue</li>
+              <li data-i18n="skills.fe2">Three.js &amp; WebGL</li>
+              <li data-i18n="skills.fe3">Design Systems &amp; Motion</li>
+              <li data-i18n="skills.fe4">Performance Engineering</li>
+            </ul>
+          </div>
+          <div class="skill-column" data-hover-lift>
+            <h3 data-i18n="skills.backend">Backend &amp; Systems</h3>
+            <ul class="skill-list">
+              <li data-i18n="skills.be1">Node.js / Python / Go</li>
+              <li data-i18n="skills.be2">Microservices &amp; APIs</li>
+              <li data-i18n="skills.be3">PostgreSQL / Redis / Cloud</li>
+              <li data-i18n="skills.be4">DevOps &amp; CI/CD</li>
+            </ul>
+          </div>
+          <div class="skill-column" data-hover-lift>
+            <h3 data-i18n="skills.ai">AI &amp; Emerging Tech</h3>
+            <ul class="skill-list">
+              <li data-i18n="skills.ai1">LLM Integration &amp; RAG</li>
+              <li data-i18n="skills.ai2">ML Pipelines &amp; MLOps</li>
+              <li data-i18n="skills.ai3">Blockchain / Web3</li>
+              <li data-i18n="skills.ai4">Mobile — Flutter / RN</li>
+            </ul>
+          </div>
+          <div class="skill-column" data-hover-lift>
+            <h3 data-i18n="skills.game">Game Development</h3>
+            <ul class="skill-list">
+              <li data-i18n="skills.g1">Unity / C# / Unreal</li>
+              <li data-i18n="skills.g2">Game Systems &amp; Combat</li>
+              <li data-i18n="skills.g3">Wallet &amp; Web3 Integration</li>
+              <li data-i18n="skills.g4">Live Ops &amp; Cloud Sync</li>
+            </ul>
+          </div>
+        </div>
+        <div class="metrics-row" data-reveal>
+          <div class="metric" data-hover-glow><span class="metric-value">10+</span><span class="metric-label" data-i18n="skills.m1">Years Experience</span></div>
+          <div class="metric" data-hover-glow><span class="metric-value">50+</span><span class="metric-label" data-i18n="skills.m2">Projects Delivered</span></div>
+          <div class="metric" data-hover-glow><span class="metric-value" data-i18n="skills.m3v">JP · Global</span><span class="metric-label" data-i18n="skills.m3">Market Reach</span></div>
+          <div class="metric" data-hover-glow><span class="metric-value">100%</span><span class="metric-label" data-i18n="skills.m4">Craft Commitment</span></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">Get in Touch</p>
+        </div>
+        <div class="contact-panel contact-panel--hover" data-reveal>
+          <p class="contact-lead" data-i18n="contact.lead">
+            Open to senior engineering roles, technical leadership, and
+            high-impact product collaborations — in Japan and internationally.
+          </p>
+          <a href="mailto:firegridlabs@gmail.com" class="contact-email contact-email--magnetic">firegridlabs@gmail.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Takahiro Sato · 佐藤貴大</p>
+      <p class="footer-note" data-i18n="footer.note">Built with Three.js · Designed with intention</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
