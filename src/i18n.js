@@ -4,8 +4,8 @@ export const translations = {
   en: {
     meta: {
       description:
-        'Takahiro Sato — Senior Fullstack Engineer. 10 years bridging Japanese craftsmanship and global digital innovation.',
-      title: 'Takahiro Sato | Senior Fullstack Engineer',
+        'Koichi Nakamura — Senior Fullstack Engineer. 10 years bridging Japanese craftsmanship and global digital innovation.',
+      title: 'Koichi Nakamura | Senior Fullstack Engineer',
     },
     nav: {
       about: 'About',
@@ -38,7 +38,7 @@ export const translations = {
       title: 'About',
       subtitle: 'About Me',
       lead:
-        'My name is <strong>Takahiro Sato</strong>. As a senior fullstack engineer with a decade of experience, my greatest strength lies in navigating both Japanese and international projects — understanding local nuance while engineering for global scale.',
+        'My name is <strong>Koichi Nakamura</strong>. As a senior fullstack engineer with a decade of experience, my greatest strength lies in navigating both Japanese and international projects — understanding local nuance while engineering for global scale.',
       body:
         'From LLMO diagnostics platforms in Tokyo to metaverse titles with wallet integration and data-visualization products serving enterprises worldwide, I design systems where performance, accessibility, and aesthetic refinement are never traded against one another.',
       precision: 'Precision',

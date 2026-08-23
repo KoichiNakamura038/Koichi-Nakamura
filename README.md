@@ -1,6 +1,6 @@
-# Takahiro Sato — Portfolio
+# Koichi Nakamura — Portfolio
 
-A Three.js-powered portfolio showcasing Takahiro Sato's decade of fullstack engineering experience across Japanese and global markets.
+A Three.js-powered portfolio showcasing Koichi Nakamura's decade of fullstack engineering experience across Japanese and global markets.
 
 ## Features
 
